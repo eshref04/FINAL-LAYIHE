@@ -11,12 +11,16 @@ footer {
     padding: 0px 28px;
   }
   &__left {
+    img{
+      margin-left: 30px;
+    }
     p {
       width: 280px;
       margin: 20px 0px 0px;
       color: #ababab;
       line-height: 1.7;
       font-size: 16px;
+      margin-left: 30px;
     }
     &__icons {
       display: flex;
@@ -74,6 +78,7 @@ footer {
   }
 
   &__contact {
+    margin-left: 30px;
     h3 {
       margin: 0px 0px 30px;
       font-size: 18px;
@@ -104,6 +109,7 @@ footer {
       font-size: 18px;
       color: white;
       font-weight: 700;
+      margin-left: 30px;
     }
     ul {
       display: flex;

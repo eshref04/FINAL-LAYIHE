@@ -25,7 +25,7 @@ header {
     padding: 54px 20px 0px;
     &__btn {
       position: relative;
-      padding: 16px 25px 18px;
+      padding: 4px 25px ;
       font-size: 13px;
       text-transform: uppercase;
       font-weight: 600;
@@ -33,13 +33,15 @@ header {
       margin-left: 15px;
       background-color: #b6a188;
       color: white;
-      margin-bottom: 63px;
+      margin-bottom: 57px;
       border-radius: 2px;
       display: flex;
       justify-content: center;
       align-items: center;
       transition: 0.5s ;
       overflow: hidden;
+
+     
      
       &::before{
         content: "";
@@ -73,6 +75,7 @@ header {
         z-index: 3;
       }
       p{
+        margin-top: 15px;
         z-index: 3;
         transition: .5s;
       }
@@ -113,7 +116,7 @@ header {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 26px;
-    padding-bottom: 26px;
+    padding-bottom: 9px;
   }
   &__menu {
     &__pages {
@@ -140,7 +143,7 @@ header {
       display: none;
       position: absolute;
       background-color: #0a0a0a;
-      min-width: 160px;
+      min-width: 144px;
       padding-top: 20px;
       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
       z-index: 1;
@@ -163,6 +166,7 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
+      gap: 20px;
 
       .home {
         a {
@@ -171,13 +175,14 @@ header {
       }
       li {
         padding-right: 18px;
-        padding-left: 18px;
+        
 
         i {
           color: #969696;
           margin-left: 13px;
           font-size: 12px;
           transition: 0.3s linear;
+          
         }
 
         a {
@@ -203,6 +208,7 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-bottom: 20px;
     i {
       color: #636363;
       margin-top: 9px;

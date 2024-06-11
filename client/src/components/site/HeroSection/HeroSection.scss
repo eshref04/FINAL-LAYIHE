@@ -1,0 +1,154 @@
+
+
+@keyframes slideInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .hero__section {
+    position: relative;
+    .carousel-item {
+      position: relative;
+  
+      &__first, &__second {
+        position: relative;
+  
+        &::before {
+          content: " ";
+          position: absolute;
+          width: 50px;
+          height: 3px;
+          background: #b6a188;
+          top: -36px;
+          left: 32px;
+        }
+  
+        &.carousel-item__second::before {
+          background: #2f2f2f; 
+        }
+      }
+  
+      &__text {
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation-duration: 1s;
+        animation-fill-mode: both;
+  
+        h1, p, a {
+          opacity: 0;
+        }
+  
+        h1 {
+          font-size: 75px;
+          color: #191919;
+          font-family: "Playfair Display", serif;
+          font-weight: 400;
+          animation: slideInUp 0.5s ease-out forwards;
+        }
+  
+        p {
+          width: 610px;
+          font-weight: 400;
+          color: #767676;
+          line-height: 30px;
+          font-size: 19px;
+          font-family: "Poppins", sans-serif;
+          margin-bottom: 50px;
+          animation: slideInUp 0.5s ease-out 0.2s forwards; 
+        }
+  
+        a {
+          font-size: 12px;
+          font-family: "Poppins", sans-serif;
+          padding: 17px 18px 19px 23px;
+          background-color: #b6a188;
+          font-weight: 700;
+          transition: 0.3s linear;
+          color: white;
+          letter-spacing: 2px;
+          border-radius: 4px;
+          animation: slideInDown 0.5s ease-out 0.4s forwards;
+
+          &:hover{
+            background: #000;
+          }
+  
+          i {
+            margin-left: 4px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    &__bg__image{
+        bottom: -716px;
+        border-radius: 6px;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        font-family: "Poppins", sans-serif;
+        padding: 95px 545px 80px 75px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url("../../../assets/hero-bg-image.jpg");
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        h3{
+            font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    text-transform: none;
+    color: #3a3a3a;
+    margin-bottom: 30px;
+        }
+
+        p{
+            font-weight: 400;
+            width: 620px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            font-size: 17px;
+            color: #858585;
+        }
+
+        img{
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        span{
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #b6a188;
+        }
+    }
+  }
+  
