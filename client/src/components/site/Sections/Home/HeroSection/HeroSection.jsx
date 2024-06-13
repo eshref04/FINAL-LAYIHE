@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
 import "./HeroSection.scss";
 import { Link } from "react-router-dom";
-import FirstSlide from "../../../assets/first-slide.jpg";
-import SecondSlide from "../../../assets/second-slide.jpg";
-import SignatureImg from "../../../assets/signature-img.png"
+import FirstSlide from "../../../../../assets/first-slide.jpg";
+import SecondSlide from "../../../../../assets/second-slide.jpg";
+import SignatureImg from "../../../../../assets/signature-img.png"
+
+
 
 
 const HeroSection = () => {
