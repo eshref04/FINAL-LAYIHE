@@ -1,0 +1,61 @@
+.advantages__section {
+  font-family: "Poppins", sans-serif;
+  &__wrapper {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    &__heading {
+      position: relative;
+      text-align: center;
+      margin-bottom: 80px;
+      span {
+        margin-bottom: 10px;
+        display: inline-block;
+      }
+
+      &::after {
+        position: absolute;
+        content: " ";
+        background-color: #b1976b;
+        height: 30px;
+        width: 1px;
+        bottom: -45px;
+      }
+    }
+    &__body {
+      margin-top: 20px;
+      display: flex;
+      gap: 50px;
+
+      p {
+        width: 550px;
+        line-height: 1.7;
+      }
+    }
+    &__end {
+      padding-top: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      &__crd {
+        text-align: center;
+        background-image: url("../../../../../assets/advantages-circle.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+        &__span {
+          padding-bottom: 20px;
+          &__last {
+            display: inline-block;
+
+            font-size: 17px;
+            font-weight: 400;
+            text-transform: none;
+            font-size: 17px;
+            color: #b1976b;
+          }
+        }
+      }
+    }
+  }
+}

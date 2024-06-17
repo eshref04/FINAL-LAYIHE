@@ -1,0 +1,56 @@
+.contact__form__section {
+  font-family: "Poppins", sans-serif;
+  padding: 100px 0px 100px;
+  background: #f3f3f3;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__heading {
+      padding-bottom: 60px;
+      text-align: center;
+      h3 {
+        font-size: 39px;
+        color: #161616;
+        font-weight: 800;
+      }
+      span {
+        margin-top: 10px;
+        font-size: 19px;
+        color: #747474;
+      }
+    }
+    &__form {
+      width: 720px;
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      input {
+        outline: none;
+        border: none;
+        width: 100%;
+        padding: 20px 22px;
+        font-size: 15px;
+      }
+      textarea {
+        outline: none;
+        border: none;
+        width: 100%;
+        padding: 20px 22px;
+        height: 155px;
+      }
+      button {
+        width: 100%;
+        background-color: #b1976b;
+        font-size: 14px;
+        padding: 20px 33px;
+        border: none;
+        color: #fff;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}

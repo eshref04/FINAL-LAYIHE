@@ -13,12 +13,16 @@
     "axios": "^1.7.2",
     "react": "^18.2.0",
     "react-awesome-slider": "^4.1.0",
+    "react-countup": "^6.5.3",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-helmet-async": "^2.0.5",
+    "react-modal": "^3.16.1",
     "react-router": "^6.23.1",
     "react-router-dom": "^6.23.1",
-    "sass": "^1.77.4"
+    "react-slick": "^0.30.2",
+    "sass": "^1.77.4",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

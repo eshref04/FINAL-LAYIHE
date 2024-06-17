@@ -1,0 +1,63 @@
+.questions__section {
+    background-image: url("../../../../../assets/questions-bg.jpg");
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Poppins", sans-serif;
+  
+    &__wrapper {
+      &__body {
+        &__crd {
+          border-color: #474747;
+          border-bottom-width: 1px;
+          border-bottom-style: solid;
+          margin-bottom: 17px;
+          padding: 16px 0px;
+  
+          &__qst {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+  
+            i {
+              color: white;
+              margin-bottom: 8px;
+              font-size: 14px;
+              transition: transform 0.3s;
+            }
+  
+            h4 {
+              color: white;
+              margin-left: 24px;
+            }
+          }
+  
+          &__answer {
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transition: max-height 0.5s ease, opacity 0.5s ease;
+            
+            p {
+            
+              line-height: 1.7;
+              margin-bottom: 20px;
+              margin-top: 20px;
+              color: #b8b8b8;
+              margin-left: 37px;
+              line-height: 1.7;
+              font-size: 16px;
+              font-weight: 400;
+              
+            }
+  
+            &.active {
+              max-height: 200px; 
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }

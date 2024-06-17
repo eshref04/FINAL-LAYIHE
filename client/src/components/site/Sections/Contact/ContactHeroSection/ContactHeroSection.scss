@@ -1,0 +1,28 @@
+.contact__hero__section {
+  background-image: url("../../../../../assets/contact-hero-img.jpg");
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  position: relative;
+  padding: 280px 0px 160px;
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    h1 {
+      font-size: 75px;
+      font-weight: 700;
+    }
+    p {
+      margin-top: 25px;
+      font-size: 25px;
+
+      color: #f2f2f2;
+    }
+  }
+}

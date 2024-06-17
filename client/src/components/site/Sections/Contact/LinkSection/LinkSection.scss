@@ -1,0 +1,35 @@
+.link__section {
+  padding: 80px 0px 80px;
+  background: #161616;
+  font-family: "Poppins", sans-serif;
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &__crd {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      i {
+        font-size: 36px;
+        color: white;
+      }
+      h3 {
+        margin-top: 20px;
+        font-size: 26px;
+        font-weight: 800;
+        color: white;
+      }
+      p {
+        width: 346px;
+        font-size: 16px;
+        line-height: 27px;
+        color: white;
+      }
+      a {
+        font-size: 16px;
+        color: #b1976b;
+      }
+    }
+  }
+}

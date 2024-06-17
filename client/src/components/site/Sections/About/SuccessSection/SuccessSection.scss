@@ -1,0 +1,44 @@
+.success__section{
+    background-image: url("../../../../../assets/success-bg.jpg");
+    background-position: center;
+    font-family: "Poppins", sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   padding: 45px 30px ;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+    &__border{
+        
+        
+        width: 99%;
+        height: 97%;
+        border: 1px solid #575757;
+        &__wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            &__crd{
+            text-align: center;
+
+            h3{
+                text-transform: uppercase;
+                margin-top: 30px;
+                margin-bottom: 15px;
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            }
+            p{
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: #B0B0B0;
+            width: 386px;
+            }
+            }
+        }
+    }
+}
