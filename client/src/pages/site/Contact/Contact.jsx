@@ -5,15 +5,21 @@ import LinkSection from '../../../components/site/Sections/Contact/LinkSection/L
 import ContactFormSection from '../../../components/site/Sections/Contact/ContactFormSection/ContactFormSection'
 import MapSection from '../../../components/site/Sections/Contact/MapSection/MapSection'
 import IconSection from '../../../components/site/Sections/Contact/IconSection/IconSection'
+import { Helmet } from 'react-helmet-async'
+import ScrollToTop from '../../../ScrollToTop'
 
 const Contact = () => {
   return (
     <>
+    <Helmet>
+      <title>Contact</title>
+    </Helmet>
       <ContactHeroSection/>
       <LinkSection/>
       <ContactFormSection/>
       <MapSection/>
       <IconSection/>
+      <ScrollToTop/>
     </>
   )
 }

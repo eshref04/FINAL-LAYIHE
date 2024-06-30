@@ -1,8 +1,14 @@
 import React from 'react';
 import CountUp from 'react-countup';
+import { useInView } from 'react-intersection-observer';
 import './AdvantagesSection.scss';
 
 const AdvantagesSection = () => {
+  const { ref: counter1Ref, inView: counter1InView } = useInView({ triggerOnce: true });
+  const { ref: counter2Ref, inView: counter2InView } = useInView({ triggerOnce: true });
+  const { ref: counter3Ref, inView: counter3InView } = useInView({ triggerOnce: true });
+  const { ref: counter4Ref, inView: counter4InView } = useInView({ triggerOnce: true });
+
   return (
     <section className='advantages__section'>
       <div className="advantages__section__wrapper container" style={{ padding: "95px 0px 60px 0px" }}>
@@ -47,8 +53,8 @@ const AdvantagesSection = () => {
         </div>
         <div className='advantages__section__wrapper__end'>
           <div className="advantages__section__wrapper__end__crd" style={{ padding: "10px 0px 0px 0px" }}>
-            <div className="advantages__section__wrapper__end__crd__span" style={{ fontSize: 47, fontWeight: 500 }}>
-              <CountUp start={0} end={1000} duration={3} />
+            <div className="advantages__section__wrapper__end__crd__span" style={{ fontSize: 47, fontWeight: 500 }} ref={counter1Ref}>
+              {counter1InView && <CountUp start={0} end={1000} duration={3} />}
               <span className="gdlr-core-counter-item-suffix">+</span>
             </div>
             <div className="advantages__section__wrapper__end__crd__span__last" style={{ fontSize: 17, fontWeight: 400, textTransform: "none" }}>
@@ -56,8 +62,8 @@ const AdvantagesSection = () => {
             </div>
           </div>
           <div className="advantages__section__wrapper__end__crd" style={{ padding: "10px 0px 0px 0px" }}>
-            <div className="advantages__section__wrapper__end__crd__span" style={{ fontSize: 47, fontWeight: 500 }}>
-              <CountUp start={0} end={95} duration={3} />
+            <div className="advantages__section__wrapper__end__crd__span" style={{ fontSize: 47, fontWeight: 500 }} ref={counter2Ref}>
+              {counter2InView && <CountUp start={0} end={95} duration={3} />}
               <span className="gdlr-core-counter-item-suffix">%</span>
             </div>
             <div className="advantages__section__wrapper__end__crd__span__last" style={{ fontSize: 17, fontWeight: 400, textTransform: "none" }}>
@@ -65,8 +71,8 @@ const AdvantagesSection = () => {
             </div>
           </div>
           <div className="advantages__section__wrapper__end__crd" style={{ padding: "10px 0px 0px 0px" }}>
-            <div className="advantages__section__wrapper__end__crd__span" style={{ fontSize: 47, fontWeight: 500 }}>
-              <CountUp start={0} end={10} duration={3} />
+            <div className="advantages__section__wrapper__end__crd__span" style={{ fontSize: 47, fontWeight: 500 }} ref={counter3Ref}>
+              {counter3InView && <CountUp start={0} end={10} duration={3} />}
               <span className="gdlr-core-counter-item-suffix">mlns</span>
             </div>
             <div className="advantages__section__wrapper__end__crd__span__last" style={{ fontSize: 17, fontWeight: 400, textTransform: "none" }}>
@@ -74,8 +80,8 @@ const AdvantagesSection = () => {
             </div>
           </div>
           <div className="advantages__section__wrapper__end__crd" style={{ padding: "10px 0px 0px 0px" }}>
-            <div className="advantages__section__wrapper__end__crd__span" style={{ fontSize: 47, fontWeight: 500 }}>
-              <CountUp start={0} end={30} duration={3} />
+            <div className="advantages__section__wrapper__end__crd__span" style={{ fontSize: 47, fontWeight: 500 }} ref={counter4Ref}>
+              {counter4InView && <CountUp start={0} end={30} duration={3} />}
               <span className="gdlr-core-counter-item-suffix">+</span>
             </div>
             <div className="advantages__section__wrapper__end__crd__span__last" style={{ fontSize: 17, fontWeight: 400, textTransform: "none" }}>

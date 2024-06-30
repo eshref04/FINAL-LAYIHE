@@ -1,0 +1,115 @@
+.cart__hero__section {
+    background-image: url('../../../assets/about-hero-img.jpg');
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+  
+    &__heading {
+      padding: 136px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+  
+      h1 {
+        font-size: 51px;
+        font-weight: 700;
+        animation: slideDown 1s ease-out forwards;
+      }
+    }
+  
+    &__overlay {
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #848181ac;
+      opacity: 0.2;
+    }
+  }
+  
+  .cart__section {
+    font-family: 'Poppins', sans-serif;
+    padding: 100px 0px;
+  
+    .quantity-control {
+      button {
+        border: none;
+        background-color: transparent;
+      }
+    }
+  
+    &__wrapper {
+      &__table {
+        td {
+          padding: 19px 10px;
+          color: #3d3d3d;
+  
+          i {
+            color: black;
+          }
+        }
+      }
+  
+      &__end {
+        width: 590px;
+        padding-top: 50px;
+  
+        h2 {
+          padding-bottom: 20px;
+          font-size: 18px;
+          color: #161616;
+          font-weight: 700;
+        }
+  
+        &__total {
+          background-color: #f3f3f3;
+          width: 100%;
+          padding: 17px 20px;
+  
+          h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #161616;
+          }
+  
+          span {
+            margin-left: 140px;
+            display: inline-block;
+            padding-bottom: 6px;
+            font-size: 16px;
+            font-weight: 700;
+            color: #707070;
+          }
+        }
+  
+        &__btn {
+          button {
+            border: none;
+            padding: 20px;
+            background-color: #b1976b;
+            width: 100%;
+            font-size: 20px;
+            font-weight: 700;
+            color: #fff;
+            transition: 0.3s linear;
+  
+            &:hover {
+              cursor: pointer;
+              background-color: #161616;
+            }
+          }
+        }
+      }
+    }
+  }
+  

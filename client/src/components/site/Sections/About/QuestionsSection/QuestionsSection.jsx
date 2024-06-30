@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './QuestionsSection.scss';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const questions = [
   { question: "What do you get for your attorney’s fee?", answer: "One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. “What’s happened to me?” he thought. It wasn’t a dream. His room, a proper human." },
@@ -11,6 +13,11 @@ const questions = [
 ];
 
 const QuestionsSection = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
+
     const [activeIndex, setActiveIndex] = useState(null);
   
     const toggleQuestion = (index) => {
@@ -19,7 +26,9 @@ const QuestionsSection = () => {
   
     return (
       <section className='questions__section'>
-        <div className="questions__section__wrapper container" style={{ padding: "100px 50px 50px 50px" }}>
+        <div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" className="questions__section__wrapper container" style={{ padding: "100px 50px 50px 50px" }}>
           <div className="questions__section__wrapper__heading" style={{ paddingBottom: 45 }}>
             <h3 style={{ fontSize: 28, fontWeight: 600, letterSpacing: 0, textTransform: "none", color: "#b1976b" }}>
               Frequently Asked Questions

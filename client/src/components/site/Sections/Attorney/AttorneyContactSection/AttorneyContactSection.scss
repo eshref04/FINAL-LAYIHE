@@ -1,0 +1,41 @@
+.attorney__contact__section{
+    background: #F3F3F3;
+    padding: 85px 0px;
+    font-family: "Poppins", sans-serif;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        h3{
+            font-size: 17px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            color: rgb(44, 44, 44);
+        }
+        p{
+       text-align: center;
+       width: 960px;
+       color: #747474;
+        }
+        a{
+            
+            font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #ffffff;
+    padding: 16px 21px 16px 27px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    
+    background: #b1976b;
+            span{
+                
+            }
+            i{
+ margin-left: 10px;
+            }
+        }
+    }
+}

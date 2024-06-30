@@ -1,0 +1,119 @@
+.blog__detail__wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0px;
+    font-family: "Poppins", sans-serif;
+    &__left{
+       
+        
+        img{
+            width: 813px;
+            height: 580px;
+
+        }
+        &__content{
+            padding: 40px 0px;
+            h4{
+                color: #161616;
+                font-weight: 700;
+                font-size: 24px;
+                margin-bottom: 20px;
+
+            }
+            p{
+                max-width: 813px;
+                margin-bottom: 20px;
+                font-size: 16px;
+                color: #555555;
+                line-height: 27px;
+
+            }
+        }
+    }
+    &__right {
+        width: 100%;
+        padding: 0px 0px 100px 30px;
+    
+        &__text {
+          padding-top: 50px;
+    
+          h3 {
+            color: #383838;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: none;
+            margin-bottom: 26px;
+          }
+    
+          p {
+            width: 386px;
+            color: #555555;
+            line-height: 27px;
+            font-size: 16px;
+          }
+        }
+    
+        &__cards {
+          display: flex;
+          flex-direction: column;
+          gap: 23px;
+          padding-top: 20px;
+    
+          &__crd {
+            gap: 17px;
+            display: flex;
+    
+            &__content {
+              h3 {
+                line-height: 20px;
+                width: 252px;
+                font-size: 15px;
+                font-weight: 600;
+                color: #434343;
+                transition: 0.3s linear;
+                cursor: pointer;
+    
+                &:hover {
+                  color: #b1976b;
+                }
+              }
+    
+              ul {
+                flex-direction: column;
+                padding-left: 0px !important;
+                display: flex;
+                gap: 10px;
+                padding-top: 8px;
+    
+                li {
+                  color: #959595;
+                  display: flex;
+                  align-items: center;
+                  gap: 10px;
+    
+                  span {
+                    letter-spacing: 1px;
+                    font-weight: 500;
+                    font-size: 12px;
+                  }
+    
+                  i {
+                    font-size: 13px;
+                  }
+                }
+              }
+            }
+          }
+        }
+    
+        &__heading {
+          h3 {
+            margin-bottom: 14px;
+            color: #383838;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: none;
+          }
+        }
+      }
+}

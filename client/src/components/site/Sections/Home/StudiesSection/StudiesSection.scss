@@ -1,0 +1,227 @@
+// .studies__section {
+//   padding: 110px 0px 110px;
+
+//   font-family: "Poppins", sans-serif;
+//   &__wrapper {
+//     &__heading {
+//       position: relative;
+//       text-align: center;
+//       margin-bottom: 50px;
+
+//       &::after {
+//         position: absolute;
+//         content: " ";
+//         background-color: #b1976b;
+//         left: 50%;
+//         right: 50%;
+//         transform: translate(-50%, -50%);
+//         height: 3px;
+//         width: 50px;
+//         bottom: -30px;
+//       }
+//       h3 {
+//         font-size: 30px;
+//         font-weight: 700;
+//         text-transform: none;
+//         color: #282828;
+//       }
+//       span {
+//         margin-bottom: 6px;
+//         font-size: 15px;
+//         font-weight: 600;
+//         font-style: normal;
+//         letter-spacing: 3px;
+//         text-transform: uppercase;
+//         color: #747474;
+//       }
+//     }
+//     &__slider {
+//       padding-top: 40px;
+//       &__crd {
+//         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+//         width: 386px !important;
+//         margin-left: 20px;
+
+//         &__img {
+//           position: relative;
+
+//           width: 100%;
+//           height: 276px;
+//           &__bg {
+//             cursor: pointer;
+//             border-radius: 6px 6px 0px 0px !important;
+//             width: 100%;
+//             height: 100%;
+//             opacity: 1;
+//             background: #00000080;
+//             position: absolute;
+//             top: 0;
+//             right: 0;
+//             bottom: 0;
+//             left: 0;
+//             transition: 0.3s linear;
+
+//             &:hover {
+//               opacity: 0;
+//             }
+//           }
+//           img {
+//             border-radius: 6px 6px 0px 0px !important;
+//             width: 100%;
+//             height: 100%;
+//           }
+//         }
+
+//         &__body {
+//           border-radius: 0px 0px 6px 6px;
+//           background-color: #fff;
+
+//           display: flex;
+//           justify-content: center;
+//           flex-direction: column;
+//           align-items: center;
+//           text-align: center;
+//           padding: 35px 32px 25px;
+//           h3 {
+//             text-transform: uppercase;
+//             a {
+//               font-size: 18px;
+//               font-weight: 600;
+//               letter-spacing: 0px;
+//               text-transform: none;
+//               color: #191919;
+//             }
+//           }
+//           span {
+//             font-size: 16px;
+//             font-weight: 400;
+//             font-style: normal;
+            
+            
+//             color: #B1B1B1;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+.studies__section {
+  padding: 110px 0px 110px;
+
+  font-family: "Poppins", sans-serif;
+  &__wrapper {
+    &__heading {
+      position: relative;
+      text-align: center;
+      margin-bottom: 50px;
+
+      &::after {
+        position: absolute;
+        content: " ";
+        background-color: #b1976b;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+        height: 3px;
+        width: 50px;
+        bottom: -30px;
+      }
+      h3 {
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: none;
+        color: #282828;
+      }
+      span {
+        margin-bottom: 6px;
+        font-size: 15px;
+        font-weight: 600;
+        font-style: normal;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #747474;
+      }
+    }
+    &__slider {
+      padding-top: 40px;
+      &__crd {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+        width: 386px !important;
+        margin-left: 20px;
+
+        &__img {
+          position: relative;
+
+          width: 100%;
+          height: 276px;
+          &__bg {
+            cursor: pointer;
+            border-radius: 6px 6px 0px 0px !important;
+            width: 100%;
+            height: 100%;
+            opacity: 1;
+            background: #00000080;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transition: 0.3s linear;
+
+            &:hover {
+              opacity: 0;
+            }
+          }
+          img {
+            border-radius: 6px 6px 0px 0px !important;
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        &__body {
+          border-radius: 0px 0px 6px 6px;
+          background-color: #fff;
+
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          padding: 35px 32px 25px;
+          h3 {
+            text-transform: uppercase;
+            a {
+              font-size: 18px;
+              font-weight: 600;
+              letter-spacing: 0px;
+              text-transform: none;
+              color: #191919;
+            }
+          }
+          span {
+            font-size: 16px;
+            font-weight: 400;
+            font-style: normal;
+            color: #B1B1B1;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1363px) {
+  .studies__section{
+   &__wrapper{
+    &__slider{
+      padding-left:  110px;
+    }
+   }
+  }
+  
+}

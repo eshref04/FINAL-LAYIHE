@@ -7,10 +7,15 @@ import AdvantagesSection from '../../../components/site/Sections/About/Advantage
 import QuestionsSection from '../../../components/site/Sections/About/QuestionsSection/QuestionsSection'
 import AboutCardsSection from '../../../components/site/Sections/About/AboutCardsSection/AboutCardsSection'
 import AboutSubsSection from '../../../components/site/Sections/About/AboutSubsSection/AboutSubsSection'
+import { Helmet } from 'react-helmet-async'
+import ScrollToTop from '../../../ScrollToTop'
 
 const About = () => {
   return (
     <>
+    <Helmet>
+      <title>About</title>
+    </Helmet>
       <HeroSection/>
       <HistorySection/>
       <SuccessSection/>
@@ -18,6 +23,7 @@ const About = () => {
       <QuestionsSection/>
       <AboutCardsSection/>
       <AboutSubsSection/>
+      <ScrollToTop/>
     </>
   )
 }

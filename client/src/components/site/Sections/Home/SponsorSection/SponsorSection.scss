@@ -1,0 +1,25 @@
+.sponsor__section{
+    background-color: #F4F4F4;
+    padding: 70px 100px 70px;
+    
+    &__wrapper{
+       
+        display: flex;
+        justify-content: space-between;
+        img{
+           
+            width: 220px;
+            height: 120px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1363px) {
+    .sponsor__section{
+     &__wrapper{
+        display: flex;
+        justify-content: center;
+     }
+      
+    }
+  }

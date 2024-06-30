@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./PracticeSection.scss"
 import { Link } from 'react-router-dom';
 import PracticeIcon1 from "../../../../../assets/practice-icon1.png"
@@ -9,10 +9,12 @@ import PracticeIcon5 from "../../../../../assets/practice-icon5.png"
 import PracticeIcon6 from "../../../../../assets/practice-icon6.png"
 
 
+
 const PracticeSection = () => {
+  
   return (
     <section className='practice__section'>
-      <div className="container">
+      <div  className="container">
       <div className='practice__section__heading'>
       <span>WHAT WE ARE EXPERT AT</span>
       <h3>Legal Practices Area</h3>

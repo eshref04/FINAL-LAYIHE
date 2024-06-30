@@ -1,10 +1,16 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './HistorySection.scss';
 import SignatureImg from '../../../../../assets/about-signature.png';
 import PlayBtn from '../../../../../assets/about-play-btn.png';
 import VideoModal from './VideoModal';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const HistorySection = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => {
@@ -18,7 +24,7 @@ const HistorySection = () => {
   return (
     <>
       <section className="history__section">
-        <div className="history__section__wrapper container">
+        <div data-aos="fade-left" className="history__section__wrapper container">
           <div
             className="history__section__wrapper__content"
             style={{ padding: '100px 70px 100px 60px' }}

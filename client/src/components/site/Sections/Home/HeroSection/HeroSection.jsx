@@ -4,11 +4,13 @@ import { Link } from "react-router-dom";
 import FirstSlide from "../../../../../assets/first-slide.jpg";
 import SecondSlide from "../../../../../assets/second-slide.jpg";
 import SignatureImg from "../../../../../assets/signature-img.png"
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 const HeroSection = () => {
+  
   useEffect(() => {
     const carouselItems = document.querySelectorAll(".carousel-item");
     carouselItems.forEach((item) => {
@@ -31,7 +33,7 @@ const HeroSection = () => {
 
   return (
     <section className="hero__section">
-      <div
+      <div 
         id="carouselExampleControls"
         className="carousel slide"
         data-ride="carousel"

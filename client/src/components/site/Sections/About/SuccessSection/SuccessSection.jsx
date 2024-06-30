@@ -1,16 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./SuccessSection.scss"
 import Icon1 from  "../../../../../assets/success-icon1.png"
 import Icon2 from  "../../../../../assets/success-icon2.png"
 import Icon3 from  "../../../../../assets/success-icon3.png"
 import BgImage from "../../../../../assets/success-bg.jpg"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const SuccessSection = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <section className='success__section'>
     <div className='success__section__border'
     style={{ padding: "100px 80px 65px 80px" }}>
-    <div
+    <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="3500"
   className="success__section__border__wrapper container"
   
   data-skin="Our Philosophy"

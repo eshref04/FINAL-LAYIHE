@@ -1,0 +1,85 @@
+.attorney__questions__section{
+    padding: 95px 0px 35px;
+    font-family: "Poppins", sans-serif;
+    &__wrapper{
+        
+  display: flex;
+  gap: 50px;
+        &__left{
+          &__text{
+            padding-top: 30px;
+             h3{
+                font-size: 20px;
+                font-weight: 700;
+                letter-spacing: 0px;
+                text-transform: none;
+                color: #2f2f2f;
+             }
+             p{
+                width: 600px;
+                margin-top: 16px;
+               color: #747474;
+               line-height: 27px;
+               font-size: 16px;
+             }
+          }
+        }
+        &__right {
+            
+            &__crd {
+              border-color: #e6e6e6;
+              border-bottom-width: 1px;
+              border-bottom-style: solid;
+              margin-bottom: 12px;
+              padding: 16px 0px;
+      
+              &__qst {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+      
+                i {
+                  color: #4c4c4c;
+                  margin-bottom: 8px;
+                  font-size: 14px;
+                  transition: transform 0.3s;
+                }
+      
+                h4 {
+                    color: #4c4c4c;
+                  margin-left: 24px;
+                  font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    text-transform: none;
+                }
+              }
+      
+              &__answer {
+                max-height: 0;
+                overflow: hidden;
+                opacity: 0;
+                transition: max-height 0.5s ease, opacity 0.5s ease;
+                
+                p {
+                 width: 563px;
+                  line-height: 1.7;
+                  margin-bottom: 20px;
+                  margin-top: 20px;
+                  color: #555555;
+                  margin-left: 37px;
+                  line-height: 1.7;
+                  font-size: 16px;
+                  font-weight: 400;
+                  
+                }
+      
+                &.active {
+                  max-height: 200px; 
+                  opacity: 1;
+                }
+              }
+            }
+          }
+    }
+}

@@ -1,0 +1,21 @@
+.admin__attorney__section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% ;
+   background: #F3F3F3; 
+    &__wrapper{
+    display: flex;
+    justify-content: center;
+
+     table{
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+        button{
+            width: 100px;
+        }
+     }
+    
+    }
+}
+  

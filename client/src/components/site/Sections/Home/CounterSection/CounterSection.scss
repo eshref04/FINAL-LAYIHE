@@ -1,0 +1,50 @@
+.counter__section {
+  background-image: url("../../../../../assets/counter-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
+  
+  &__wrapper {
+    padding: 95px 0px 95px;
+    display: flex;
+    align-items: center;
+
+    &__cards {
+      padding-top: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+
+      &__crd {
+        text-align: center;
+
+        &__span {
+          color: #fff;
+          padding-bottom: 20px;
+
+          &__last {
+            display: inline-block;
+            font-size: 17px;
+            font-weight: 400;
+            text-transform: none;
+            font-size: 17px;
+            color: #b7a793;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1363px) {
+  .counter__section{
+   &__wrapper{
+   &__cards{
+    display: flex;
+    gap: 60px;
+   }
+   }
+  }
+  
+}

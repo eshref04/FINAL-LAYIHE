@@ -1,0 +1,13 @@
+.attorney__sponsors__section{
+    padding: 50px 100px 50px;
+    
+    &__wrapper{
+       
+        display: flex;
+        justify-content: space-between;
+        img{
+            width: 220px;
+            height: 120px;
+        }
+    }
+}
