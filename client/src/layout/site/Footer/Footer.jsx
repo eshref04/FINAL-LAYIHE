@@ -64,7 +64,7 @@ const Footer = () => {
           <div className="footer__start__practice">
             <h3>Practice Areas</h3>
             <ul>
-              <div>
+              <div className="footer__start__practice__first">
                 <li>
                   <Link>Family Violence</Link>
                 </li>
@@ -82,7 +82,7 @@ const Footer = () => {
                 </li>
               </div>
 
-              <div>
+              <div className="footer__start__practice__last">
                 <li>
                   <Link>Giving Million Air Its Wings</Link>
                 </li>

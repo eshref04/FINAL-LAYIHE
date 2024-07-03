@@ -93,11 +93,14 @@
         }
   
         &__btn {
-          button {
+          
+          a {
+            text-align: center;
+            display: inline-block;
             border: none;
             padding: 20px;
             background-color: #b1976b;
-            width: 100%;
+            width: 590px !important;
             font-size: 20px;
             font-weight: 700;
             color: #fff;

@@ -123,3 +123,31 @@
     }
     
   }
+
+  @media (max-width: 320px) {
+    .review__section{
+     &__border{
+      border: none;
+      &__wrapper{
+        
+        
+        &__box{
+          display: none;
+        }
+        &__text{
+          
+          h3{
+           font-size: 22px;
+          }
+          p{
+           width: 280px;
+           font-size: 15px;
+          }
+        }
+      }
+     }
+    }
+    
+  }
+
+  

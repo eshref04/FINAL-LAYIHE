@@ -46,7 +46,7 @@ const CardsSection = () => {
       <div className='cards__section__wrapper container'>
         <div className="cards__section__wrapper__heading">
           <h3>Partners at Attorna</h3>
-          <Link to="#"><span>View All People</span><i className="fa-solid fa-arrow-right-long"></i></Link>
+          <Link to="/attorney"><span>View All People</span><i className="fa-solid fa-arrow-right-long"></i></Link>
         </div>
 
         <div className="cards__section__wrapper__slider slider-container">

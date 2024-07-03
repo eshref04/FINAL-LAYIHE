@@ -30,8 +30,7 @@ const ContactFormSection = () => {
   }, [])
   return (
     <section className="contact__form__section">
-      <div data-aos="fade-up"
-     data-aos-duration="5000" className="contact__form__section__wrapper container">
+      <div className="contact__form__section__wrapper container">
         <div className="contact__form__section__wrapper__heading">
           <h3>Leave us your info</h3>
           <span>and we will get back to you.</span>
@@ -40,7 +39,7 @@ const ContactFormSection = () => {
         <form ref={form} onSubmit={sendEmail} className="contact__form__section__wrapper__form" action="#">
           <input type="text" placeholder="Full Name*" name="user_name" />
           <input type="email" placeholder="Email*" name="user_email" />
-          <input type="text" placeholder="Subject*" />
+          <input type="text" placeholder="Subject*" name="user_subject" />
           <textarea name="message" id="msg" placeholder="Message*"></textarea>
           <button type="submit">Submit Now</button>
         </form>

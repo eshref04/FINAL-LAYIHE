@@ -23,3 +23,38 @@
       
     }
   }
+
+  @media only screen and (max-width: 1117px) {
+    .sponsor__section{
+     &__wrapper{
+        display: flex;
+        justify-content: center;
+
+        img{
+           
+            width: 150px;
+            height: 80px;
+        }
+     }
+      
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    .sponsor__section{
+     &__wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        flex-direction: column;
+
+        img{
+           
+            width: 150px;
+            height: 80px;
+        }
+     }
+      
+    }
+  }

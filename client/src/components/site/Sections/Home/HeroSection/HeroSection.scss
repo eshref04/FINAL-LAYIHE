@@ -152,3 +152,85 @@
     }
   }
   
+  @media (max-width: 1440px) {
+    .hero__section{
+      .carousel-item{
+        &__text{
+          left: 56%;
+        }
+      }
+      &__bg{
+        &__image{
+           width: 100%;
+           height: 600px;
+           
+        }
+      }
+       }
+  }
+    
+    
+  @media (max-width: 768px) {
+    .hero__section{
+      display: flex;
+      justify-content: flex-start;
+      .carousel-item{
+        &__text{
+          left: 32%;
+          p{
+            width: 300px;
+          }
+        }
+      }
+      &__bg{
+        
+        &__image{
+          display: none;
+           
+        }
+      }
+       }
+  }
+
+  @media (max-width: 320px) {
+    .hero__section{
+     
+      display: flex;
+      justify-content: flex-start;
+      .carousel-item{
+        &__first,&__second{
+          &::before{
+            display: none;
+          }
+        }
+  
+        img{
+          height: 400px;
+        }
+        &__text{
+          bottom: -90px;
+          padding-left: 100px;
+          h1{
+            font-size: 40px;
+            margin-bottom: 20px;
+          }
+          p{
+            width: 230px;
+            font-size: 14px;
+            margin-bottom: 30px;
+          }
+          a{
+            font-size: 9px;
+            padding: 16px 12px;
+          }
+        }
+      }
+      &__bg{
+        
+        &__image{
+          display: none;
+           
+        }
+      }
+       }
+  }

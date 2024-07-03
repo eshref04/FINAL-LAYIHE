@@ -2,15 +2,11 @@ import React, { useContext, useEffect } from "react";
 import Slider from "react-slick";
 import "./AboutCardsSection.scss"
 import { Link } from 'react-router-dom';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import MainContext from "../../../../../context/Context";
 
 const AboutCardsSection = () => {
   const { attorney } = useContext(MainContext);
-  useEffect(() => {
-    AOS.init();
-  }, [])
+  
 
   const settings = {
     dots: true,
@@ -21,7 +17,7 @@ const AboutCardsSection = () => {
   };
   return (
     <section className='about__cards__section'>
-    <div data-aos="fade-up" data-aos-duration="7000" className='about__cards__section__wrapper container'>
+    <div  className='about__cards__section__wrapper container'>
       <div className="about__cards__section__wrapper__heading">
         <h3>Partners at Attorna</h3>
         <Link to="#"><span>View All People</span><i className="fa-solid fa-arrow-right-long"></i></Link>

@@ -6,9 +6,17 @@ import MainContext from '../../../context/Context';
 import controller from '../../../services/api/requests';
 import { endpoints } from '../../../services/api/constants';
 
+import Button from 'react-bootstrap/Button';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+
 const Header = () => {
   const { user, logout, cart } = useContext(MainContext);
   const [userInfo, setUserInfo] = useState({});
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   useEffect(() => {
     async function getUser() {
@@ -56,6 +64,29 @@ const Header = () => {
       </header>
       <header className="header__end">
         <div className="container">
+        
+        <Button style={{backgroundColor:"white",border:"none"}} className='mb-3 d-flex align-items-center gap-2 ' variant="primary" onClick={handleShow}>
+      <i style={{color:"#B6A188",fontSize:"22px",fontWeight:"600"}} class="fa-solid fa-bars"></i> 
+      </Button>
+
+      <Offcanvas show={show} onHide={handleClose}>
+        <Offcanvas.Header closeButton style={{fontFamily:"Poppins"}}>
+          <Offcanvas.Title style={{fontSize:"30px"}}>Menu</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body style={{fontFamily:"Poppins"}}>
+          <ul className='canvas__menu'>
+            <li><Link to={"/"}>Home</Link></li>
+            <li><Link to={"/about"}>About</Link></li>
+            <li><Link to={"/contact"}>Contact</Link></li>
+            <li><Link to={"/attorney"}>Attorney</Link></li>
+            <li><Link to={"/casestudy"}>Case Study</Link></li>
+            <li><Link to={"/blog"}>Blog</Link></li>
+            <li><Link to={"/shop"}>Shop</Link></li>
+            <li><Link to={"/cart"}>Cart</Link></li>
+            <li><Link to={"/wishlist"}>Wishlist</Link></li>
+          </ul>
+        </Offcanvas.Body>
+      </Offcanvas>
           <nav className="header__end__menu">
             <ul>
               <li>
@@ -93,7 +124,7 @@ const Header = () => {
           <div className="header__end__right">
             {
               user.id != null ? (
-                <div className='d-flex align-items-center mx-5'>
+                <div className='user__id d-flex align-items-center mx-5'>
                   <img
                     width={"25px"}
                     style={{
@@ -110,13 +141,14 @@ const Header = () => {
                 </div>
               ) : ""
             }
+            
             {
               user.id ? (
-                <Link onClick={logout} to="/login" className="bton">
+                <Link   onClick={logout} to="/login" className="bton" >
                   Log Out
                 </Link>
               ) : (
-                <Link to="/login" className="bton">
+                <Link  to="/login" className="bton">
                   My Account
                 </Link>
               )

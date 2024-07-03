@@ -46,7 +46,7 @@ const ContactSection = () => {
           />
           <button type="submit">Subscribe</button>
         </form>
-        <div></div>
+        {/* <div></div> */}
       </div>
 
       <div  className="contact__section__right">

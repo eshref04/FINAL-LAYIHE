@@ -27,7 +27,7 @@ const FormSection = () => {
    
   return (
     <section className='form__section'>
-    <div   className='form__section__border'>
+    <div className='form__section__border'>
    
  <div className=' form__section__border__heading'>
     <h3>Free Consultation</h3>

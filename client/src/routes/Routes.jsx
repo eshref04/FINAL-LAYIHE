@@ -25,6 +25,8 @@ import AdminShop from "../pages/admin/AdminShop/AdminShop";
 import AddShop from "../pages/admin/AddShop/AddShop";
 import AttorneyDetail from "../pages/site/AttorneyDetail/AttorneyDetail";
 import BlogDetail from "../pages/site/BlogDetail/BlogDetail";
+import Checkout from "../pages/site/Checkout/Checkout";
+import Error from "../pages/site/Error/Error";
 
 
 
@@ -89,8 +91,13 @@ const ROUTES = [
             {
                 path: "/cart",
                 element: <Cart/>
+            } ,
+            {
+                path: "/checkout",
+                element: <Checkout/>
             }
         ]
+
     },
     {
         path: "/admin",
@@ -131,6 +138,11 @@ const ROUTES = [
             
         ]
     }
+    ,
+            {
+                path: '*',
+                element: <Error/>
+            }
 ]
  
 export default ROUTES

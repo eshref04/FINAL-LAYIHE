@@ -178,3 +178,58 @@ $black: #b6a188;
       
     
 }
+
+@media (max-width: 1363px) {
+  .practice__section{
+   .container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   }
+   &__areas{
+    display: flex;
+    align-items: center;
+     flex-direction: column;
+   }
+     }
+}
+
+@media (max-width: 768px) {
+  .practice__section{
+    padding-top: 120px;
+   
+   .container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   }
+   &__areas{
+    display: flex;
+    align-items: center;
+     flex-direction: column;
+   }
+     }
+}
+
+@media (max-width: 320px) {
+  .practice__section{
+    &__heading{
+      span{
+        font-size: 14px;
+        }
+        h3{
+        font-size: 22px;
+        }
+    }
+    &__areas{
+      &__card{
+        width: 280px;
+        p{
+          width: 260px;
+          font-size: 14px;
+        }
+      }
+    }
+   
+     }
+}

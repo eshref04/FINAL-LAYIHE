@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import "./AttorneyQuestionsSection.scss";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 
 const questions = [
   {
@@ -34,9 +33,7 @@ const questions = [
 ];
 
 const AttorneyQuestionsSection = () => {
-  useEffect(() => {
-    AOS.init();
-  }, [])
+ 
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleQuestion = (index) => {
@@ -45,9 +42,7 @@ const AttorneyQuestionsSection = () => {
 
   return (
     <section className="attorney__questions__section">
-      <div data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="3500" className="attorney__questions__section__wrapper container">
+      <div className="attorney__questions__section__wrapper container">
         <div className="attorney__questions__section__wrapper__left">
           <iframe
             width="600"

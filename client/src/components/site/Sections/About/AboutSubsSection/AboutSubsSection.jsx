@@ -1,13 +1,10 @@
 import React, { useEffect } from "react";
 import "./AboutSubsSection.scss";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 
 const AboutSubsSection = () => {
 
-  useEffect(() => {
-    AOS.init();
-  }, [])
+ 
   return (
     <section className="about__subs__section">
       <div
@@ -16,8 +13,7 @@ const AboutSubsSection = () => {
           padding: "160px 0px 110px 0px",
         }}
       >
-        <div data-aos="fade-up"
-     data-aos-anchor-placement="center-bottom" className="about__subs__section__border__wrapper container">
+        <div className="about__subs__section__border__wrapper container">
           <div className="about__subs__section__border__wrapper__heading">
             <span
               style={{

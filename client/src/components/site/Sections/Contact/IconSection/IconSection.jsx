@@ -10,7 +10,7 @@ const IconSection = () => {
   }, [])
   return (
     <section className="icon__section">
-      <div data-aos="fade-right" className="icon__section__wrapper container">
+      <div  className="icon__section__wrapper container">
         <i class="fa-solid fa-envelope"></i>
         <i class="fa-brands fa-facebook-f"></i>
         <i class="fa-brands fa-skype"></i>

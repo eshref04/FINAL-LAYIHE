@@ -3,8 +3,6 @@ import "./BlogSection.scss";
 import Img1 from "../../../../../assets/blog-img1.jpg";
 import Img2 from "../../../../../assets/blog-img2.jpg";
 import Img3 from "../../../../../assets/blog-img3.jpg";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import MainContext from "../../../../../context/Context";
 import ReactPaginate from 'react-paginate';
 import { Link } from "react-router-dom";
@@ -14,9 +12,7 @@ const BlogSection = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const itemsPerPage = 3;
 
-  useEffect(() => {
-    AOS.init();
-  }, []);
+
 
   useEffect(() => {
     const handleBeforeUnload = () => {
@@ -40,7 +36,7 @@ const BlogSection = () => {
 
   return (
     <section className="blog__section">
-      <div data-aos="fade-up" data-aos-duration="3000" className="blog__section__wrapper container">
+      <div  className="blog__section__wrapper container">
         <div className="blog__section__wrapper__slider slider-container">
           {currentItems && currentItems.map((item, index) => (
             <div key={index} className="blog__section__wrapper__slider__card">

@@ -225,3 +225,19 @@
   }
   
 }
+
+@media (max-width: 768px) {
+  .studies__section{
+   &__wrapper{
+
+    &__slider{
+      padding-left:  0px;
+      &__crd{
+        width: 240px !important;
+      }
+      
+    }
+   }
+  }
+  
+}

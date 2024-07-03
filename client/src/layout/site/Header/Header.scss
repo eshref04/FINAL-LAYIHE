@@ -2,6 +2,27 @@ header {
   font-family: "Poppins", sans-serif;
 }
 
+.canvas__menu{
+  padding-left: 0px;
+  text-align: center;
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  li{
+      a{
+      color: #121212;
+      font-size: 20px;
+      position: relative;
+      transition: 0.3s linear;
+      font-weight: 600;
+       &:hover{
+          color: #B6A188;
+       }
+      }
+  }
+}
+
 .header__start {
   border: 1px solid #e6e6e6;
 
@@ -113,6 +134,7 @@ header {
   background-color: #f7f7f7;
   position: sticky;
   z-index: 999;
+ 
   top: -5px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   .container {
@@ -320,3 +342,69 @@ header {
 }
 }
 
+@media (max-width: 768px) {
+  .header__start{
+   display: none;
+  }
+  .header__end{
+    &__menu{
+      display: none;
+    }
+  .container{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+
+    .shop__icon{
+      margin-left: 20px;
+     }
+    
+    .shop__icon__span{
+      top: 10px;
+      right: -10px;
+     }
+  }
+  
+  
+}
+}
+
+@media (max-width: 320px) {
+  
+  
+  .header__end{
+    
+    &__right{
+     padding-left: 0px ;
+     width: 230px !important;
+
+     .shop__icon{
+      margin-left: 0px !important;
+     }
+
+     .shop__icon__span{
+      top: 0px !important;
+      right: 14px !important;
+     }
+
+     .user__id{
+      margin: 0px 30px !important;
+    }
+    }
+    .container{
+      display: flex;
+      gap: 0px;
+      
+      
+    }
+   .bton{
+    font-size: 12px;
+   
+   
+   }
+ 
+  
+  
+}
+}
+ 

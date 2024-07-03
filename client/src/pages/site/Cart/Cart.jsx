@@ -3,6 +3,7 @@ import './Cart.scss';
 import MainContext from '../../../context/Context';
 import { Helmet } from 'react-helmet-async';
 import ScrollToTop from '../../../ScrollToTop';
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
   const { cart, setCart, data } = useContext(MainContext);
@@ -112,7 +113,7 @@ const Cart = () => {
               <span>${totalPrice.toFixed(2)}</span>
             </div>
             <div className="cart__section__wrapper__end__btn">
-              <button>Proceed to checkout</button>
+              <Link to={"/checkout"}>Proceed to checkout</Link>
             </div>
           </div>
         </div>

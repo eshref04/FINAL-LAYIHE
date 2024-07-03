@@ -137,3 +137,78 @@
     }
   }
   
+  @media (max-width: 768px) {
+    .form__section{
+      &__border{
+        border: none;
+        &__form{
+          &__above{
+            display: flex;
+              justify-content: center;
+            input{
+              width: 300px;
+              
+            }
+          }
+          &__down{
+            display: flex;
+            justify-content: center;
+            input{
+              width: 300px;
+              
+            }
+            select{
+              width: 300px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 320px) {
+    .form__section{
+      &__border{
+        border: none;
+        &__heading{
+          h3{
+         font-size: 24px;
+          }
+          p{
+          font-size: 14px;
+          width: 280px;
+          }
+
+        }
+        &__form{
+          &__above{
+            display: flex;
+              justify-content: center;
+            input{
+              width: 140px;
+              font-size: 14px;
+              &::placeholder{
+                font-size: 13px;
+              }
+            }
+          }
+          &__down{
+            display: flex;
+            justify-content: center;
+            input{
+              width: 140px;
+              font-size: 14px;
+              &::placeholder{
+                font-size: 13px;
+              }
+            }
+            select{
+              width: 140px;
+              font-size: 13px;
+              
+            }
+          }
+        }
+      }
+    }
+  }
